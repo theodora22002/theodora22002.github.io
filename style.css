@@ -1,94 +1,101 @@
-body, h1, h2, p, ul {
+/* Reset CSS */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
-    line-height: 1.6;
+    font-family: 'Verdana', sans-serif;
+    background: linear-gradient(135deg, #00d2ff, #3a7bd5);
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 header {
-    background-color: #eea7cd;
-    color: #000000;
+    background: rgba(0, 0, 0, 0.6);
+    border: 2px solid #00ffff;
     padding: 20px;
+    border-radius: 15px;
     text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 255, 255, 0.5);
 }
 
-.profile img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin-bottom: 10px;
+header h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: #ff6f61;
+    text-shadow: 2px 2px 5px #000;
 }
 
-.profile h1 {
+header p {
     margin: 10px 0;
-    font-size: 2em;
-}
-
-.profile p {
-    font-size: 1.2em;
-    margin: 10px 0;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #ddd;
 }
 
 main {
-    padding: 20px;
+    margin-top: 20px;
     text-align: center;
 }
 
-h2 {
+main h2 {
+    font-size: 2rem;
+    color: #ffe135;
+    text-shadow: 2px 2px 5px #000;
     margin-bottom: 20px;
-    font-size: 1.8em;
-    color: #000000;
 }
 
-ul {
+main ul {
     list-style: none;
     padding: 0;
 }
 
-ul li {
+main ul li {
     margin: 10px 0;
 }
 
-ul li a {
+main ul li a {
     text-decoration: none;
-    color: #000000;
-    font-size: 1.2em;
-
-    border-radius: 5px;
-    transition: background-color 0.3s, color 0.3s;
+    font-size: 1.2rem;
+    color: #00ffff;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: 2px solid #00ffff;
+    transition: all 0.3s ease;
+    display: inline-block;
+    text-shadow: 1px 1px 5px #000;
 }
 
-ul li a:hover {
-    background-color: #f174d8;
-    color: #fff;
+main ul li a:hover {
+    color: #000;
+    background: #00ffff;
+    border-color: #ffe135;
+    transform: scale(1.1);
+    box-shadow: 0px 4px 10px rgba(255, 255, 0, 0.8);
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
+    margin-top: 20px;
     text-align: center;
-    padding: 5px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-footer p {
-    margin: 5px 0;
+    font-size: 0.9rem;
+    color: #ddd;
+    text-shadow: 1px 1px 5px #000;
 }
 
 footer a {
-    color: #fff;
+    color: #ff6f61;
     text-decoration: none;
     font-weight: bold;
 }
 
 footer a:hover {
     text-decoration: underline;
+    color: #00ffff;
 }
